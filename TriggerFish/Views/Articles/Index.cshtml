@@ -1,0 +1,26 @@
+﻿@model IEnumerable<TriggerFish.Models.Article>
+
+<div class="container custom-container">
+    <div class="row card-deck">
+        @foreach (var article in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-image" src="@article.ImageUrl" alt="@article.Title" />
+                    <div class="card-content">
+                        <div class="card-read-time">
+                            <i class="fa fa-clock-o"></i>
+                            <span>@article.ReadTime minute read</span>
+                        </div>
+                        <h2 class="card-title">@article.Title</h2>
+                        <p class="card-description">@article.Description</p>
+                        <a href="#">
+                            <i class="fa fa-arrow-right fa-lg"></i>
+                            <span class="read-more-text">Read our insights</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

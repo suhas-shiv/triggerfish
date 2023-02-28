@@ -1,0 +1,76 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.custom-container {
+    padding-top: 12px;
+    background-color: #f5f5f5;
+}
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 24px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    flex: 1 1 0;
+    
+}
+
+.card > div {
+    margin-top: auto;
+}
+
+.card-image {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+    min-height: 300px;
+}
+
+.card-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+.card-description {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.card-read-time {
+    font-size: 12px;
+    margin-top: 16px;
+    color: #666666;
+}
+
+.read-more-text {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
